@@ -41,5 +41,9 @@ namespace ConsoleApp5
         {
             Console.WriteLine($"Current {EnemyName} {Id} coordinates X: {XCord}; Y: {YCord}");
         }
+        public int GetId()
+        {
+            return Id;
+        }
     }
 }

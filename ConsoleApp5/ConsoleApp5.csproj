@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameScreen.cs" />
     <Compile Include="Enemy.cs" />
-    <Compile Include="Game.cs" />
+    <Compile Include="MainApp.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
