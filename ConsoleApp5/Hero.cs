@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class Hero
+    class Hero:Unit
     {
-        private string HeroName;
-        private int XCord;
-        private int YCord;
-
-        public Hero(string HeroName, int x, int y)
+        public Hero(string HeroName, int x, int y):base(x,y,HeroName)
         {
-            this.HeroName = HeroName;
-            XCord = x;
-            YCord = y;
         }
 
         public void MoveRight()
@@ -35,9 +28,9 @@ namespace ConsoleApp5
         {
             YCord = YCord + 1;
         }
-        public void PrintInfo()
+        public int GetY()
         {
-            Console.WriteLine($"Current {HeroName} coordinates X: {XCord}; Y: {YCord}");
+            return YCord;
         }
     }
 }

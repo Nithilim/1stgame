@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp5
+namespace ConsoleApp5.GUI
 {
-    class MainApp
+    class TextLine
     {
-        private static void Main()
-        {
-            Console.SetCursorPosition
-        }
     }
 }

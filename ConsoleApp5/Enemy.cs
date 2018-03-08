@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class Enemy
+    class Enemy:Unit
     {
         private int Id;
-        private int XCord;
-        private int YCord;
-        private string EnemyName;
 
-        public Enemy(string EnemyName, int id, int x, int y)
+        public Enemy(string EnemyName, int Id, int x, int y):base(x,y,EnemyName)
         {
-            this.EnemyName = EnemyName;
-            Id = id;
-            XCord = x;
-            YCord = y;
+            this.Id = Id;
         }
 
         public void MoveRight()
@@ -36,10 +30,6 @@ namespace ConsoleApp5
         public void MoveDown()
         {
             YCord = YCord + 1;
-        }
-        public void PrintInfo()
-        {
-            Console.WriteLine($"Current {EnemyName} {Id} coordinates X: {XCord}; Y: {YCord}");
         }
         public int GetId()
         {

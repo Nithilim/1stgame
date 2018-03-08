@@ -56,6 +56,20 @@ namespace ConsoleApp5
                 mob.PrintInfo();
             }
         }
+        public void MoveHeroUp()
+        {
+            if (MyHero.GetY()>0)
+            {
+                MyHero.MoveUp();
+            }
+        }
+        public void MoveHeroDown()
+        {
+            if (MyHero.GetY()<Height)
+            {
+                MyHero.MoveDown();
+            }
+        }
 
     }
 }

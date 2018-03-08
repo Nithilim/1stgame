@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class MainApp
+    class GameGui
     {
-        private static void Main()
-        {
-            Console.SetCursorPosition
-        }
     }
 }
