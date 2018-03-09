@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Class6
+    class CreditWindow
     {
     }
 }

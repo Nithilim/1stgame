@@ -48,10 +48,10 @@
     <Compile Include="GUI\Frame.cs" />
     <Compile Include="GUI\TextLine.cs" />
     <Compile Include="GUI\Window.cs" />
-    <Compile Include="GUI\Class5.cs" />
-    <Compile Include="GUI\Class6.cs" />
-    <Compile Include="GUI\Class7.cs" />
-    <Compile Include="GUI\Class8.cs" />
+    <Compile Include="GUI\Button.cs" />
+    <Compile Include="GUI\GameWindow.cs" />
+    <Compile Include="GUI\CreditWindow.cs" />
+    <Compile Include="GUI\TextBlock.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="GameScreen.cs" />
     <Compile Include="Enemy.cs" />

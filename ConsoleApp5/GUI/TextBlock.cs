@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Class7
+    class TextBlock:GuiObject
     {
+        List<TextLine> Block;
+
+        public TextBlock ()
     }
 }

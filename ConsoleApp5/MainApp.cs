@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp5.GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,11 @@ namespace ConsoleApp5
     {
         private static void Main()
         {
-            Console.SetCursorPosition
+            Frame frm = new Frame(10, 5, 2, 2, '^');
+            frm.Render();
+            TextLine line = new TextLine("Koooooooooop",20,15,10,1);
+            line.Render();
+            Console.ReadKey();
         }
     }
 }
