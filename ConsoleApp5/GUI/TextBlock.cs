@@ -8,8 +8,21 @@ namespace ConsoleApp5.GUI
 {
     class TextBlock:GuiObject
     {
-        List<TextLine> Block;
+        private List<TextLine> textBlock = new List<TextLine>();
 
-        public TextBlock ()
+        public TextBlock (int lineX, int lineY, int width, List<string> textList, int height):base(width, 0, lineX, lineY)
+        {
+            for(int i = 0; i<textList.Count; i++)
+            {
+                textBlock.Add(new TextLine(textList[i], lineX, lineY, width, 0));
+            }
+        }
+        public void Render()
+        {
+            for (int i = 0; i < textBlock.Count; i++)
+            {
+                textBlock[i].Render();
+            }
+        }
     }
 }

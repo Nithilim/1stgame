@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Button
+    class Button:GuiObject
     {
+        private Frame buttonActive;
+        private Frame buttonNotActive;
+
+        private bool isActive;
+
+        public Button
     }
 }
