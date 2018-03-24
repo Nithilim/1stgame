@@ -11,10 +11,8 @@ namespace ConsoleApp5
     {
         private static void Main()
         {
-            Frame frm = new Frame(10, 5, 2, 2, '^');
+            Button frm = new Button(10, 4, 5, 5, "aaa");
             frm.Render();
-            TextLine line = new TextLine("Koooooooooop",20,15,10,1);
-            line.Render();
             Console.ReadKey();
         }
     }

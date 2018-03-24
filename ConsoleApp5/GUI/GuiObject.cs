@@ -20,5 +20,6 @@ namespace ConsoleApp5.GUI
             this.X = X;
             this.Y = Y;
         }
+        public virtual void Render() { }
     }
 }

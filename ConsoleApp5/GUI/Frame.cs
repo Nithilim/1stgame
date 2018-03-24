@@ -10,38 +10,29 @@ namespace ConsoleApp5.GUI
     {
         protected char FrameSymbol;
 
-        public Frame (int FrameWidth, int FrameHeight, int FrameX, int FrameY, char FrameSymbol):base(FrameWidth, FrameHeight, FrameY, FrameY)
+        public Frame (int FrameWidth, int FrameHeight, int FrameX, int FrameY, char FrameSymbol):base(FrameWidth, FrameHeight, FrameX, FrameY)
         {
             this.FrameSymbol = FrameSymbol;
         }
 
-        public void Render()
+        public override void Render()
         {
-            Console.SetCursorPosition(X, Y);
-            for(int i = 0; i < Width; i++)
+            for(int i=0; i < Width;i++)
             {
+                Console.SetCursorPosition(X+i, Y);
+                Console.Write(FrameSymbol);
+                Console.SetCursorPosition(X + i, Y + Height);
                 Console.Write(FrameSymbol);
             }
-            for(int i = 0; i < Height; i++)
-            {
-                Console.SetCursorPosition(X, Y);
-                Console.Write(FrameSymbol);
-                Y++;
-            }
-            Y--;
-            Console.SetCursorPosition(X, Y);
-            for (int i = 0; i < Width; i++)
-            {
-                Console.Write(FrameSymbol);
-                X++;
-            }
-            X--;
+            Console.Write(FrameSymbol);
             for (int i = 0; i < Height; i++)
             {
-                Console.SetCursorPosition(X, Y);
+                Console.SetCursorPosition(X, Y+i);
                 Console.Write(FrameSymbol);
-                Y--;
+                Console.SetCursorPosition(X + Width, Y + i);
+                Console.Write(FrameSymbol);
             }
+
         }
     }
 }

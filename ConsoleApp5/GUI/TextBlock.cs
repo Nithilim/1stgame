@@ -14,10 +14,10 @@ namespace ConsoleApp5.GUI
         {
             for(int i = 0; i<textList.Count; i++)
             {
-                textBlock.Add(new TextLine(textList[i], lineX, lineY, width, 0));
+                textBlock.Add(new TextLine(textList[i], lineX, lineY, width));
             }
         }
-        public void Render()
+        public override void Render()
         {
             for (int i = 0; i < textBlock.Count; i++)
             {

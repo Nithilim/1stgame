@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameGui.cs" />
-    <Compile Include="Game.cs" />
     <Compile Include="GUI\GuiObject.cs" />
     <Compile Include="GUI\Frame.cs" />
     <Compile Include="GUI\TextLine.cs" />
@@ -52,11 +51,7 @@
     <Compile Include="GUI\GameWindow.cs" />
     <Compile Include="GUI\CreditWindow.cs" />
     <Compile Include="GUI\TextBlock.cs" />
-    <Compile Include="Unit.cs" />
-    <Compile Include="GameScreen.cs" />
-    <Compile Include="Enemy.cs" />
     <Compile Include="MainApp.cs" />
-    <Compile Include="Hero.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
