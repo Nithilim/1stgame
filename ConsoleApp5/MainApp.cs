@@ -11,9 +11,11 @@ namespace ConsoleApp5
     {
         private static void Main()
         {
-            Button frm = new Button(10, 4, 5, 5, "aaa");
-            frm.Render();
+            Console.SetWindowSize(60, 30);
+            MainWindow kek = new MainWindow();
+            kek.Render();
             Console.ReadKey();
+
         }
     }
 }

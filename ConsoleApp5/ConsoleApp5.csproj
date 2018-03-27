@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,10 +46,11 @@
     <Compile Include="GameGui.cs" />
     <Compile Include="GUI\GuiObject.cs" />
     <Compile Include="GUI\Frame.cs" />
+    <Compile Include="GUI\IRenderable.cs" />
     <Compile Include="GUI\TextLine.cs" />
     <Compile Include="GUI\Window.cs" />
     <Compile Include="GUI\Button.cs" />
-    <Compile Include="GUI\GameWindow.cs" />
+    <Compile Include="GUI\MainWindow.cs" />
     <Compile Include="GUI\CreditWindow.cs" />
     <Compile Include="GUI\TextBlock.cs" />
     <Compile Include="MainApp.cs" />

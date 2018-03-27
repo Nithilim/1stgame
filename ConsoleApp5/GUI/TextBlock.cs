@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class TextBlock:GuiObject
+    class TextBlock:GuiObject,IRenderable
     {
         private List<TextLine> textBlock = new List<TextLine>();
 
-        public TextBlock (int lineX, int lineY, int width, List<string> textList, int height):base(width, 0, lineX, lineY)
+        public TextBlock (int lineX, int lineY, int width, List<string> textList):base(width,0,lineX,lineY)
         {
             for(int i = 0; i<textList.Count; i++)
             {
-                textBlock.Add(new TextLine(textList[i], lineX, lineY, width));
+                textBlock.Add(new TextLine(textList[i], lineX, lineY+i, width));
             }
         }
-        public override void Render()
+        public void Render()
         {
-            for (int i = 0; i < textBlock.Count; i++)
+            foreach(TextLine item in textBlock)
             {
-                textBlock[i].Render();
+                item.Render();
             }
         }
     }

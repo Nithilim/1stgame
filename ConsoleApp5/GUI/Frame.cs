@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Frame:GuiObject
+    class Frame:GuiObject, IRenderable
     {
         protected char FrameSymbol;
 
@@ -15,7 +15,7 @@ namespace ConsoleApp5.GUI
             this.FrameSymbol = FrameSymbol;
         }
 
-        public override void Render()
+        public void Render()
         {
             for(int i=0; i < Width;i++)
             {

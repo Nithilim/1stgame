@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class TextLine:GuiObject
+    class TextLine:GuiObject, IRenderable
     {
         protected string Line;
 
@@ -14,7 +14,7 @@ namespace ConsoleApp5.GUI
         {
             this.Line = Line;
         }
-        public override void Render()
+        public void Render()
         {
             if (Width > Line.Length)
             {

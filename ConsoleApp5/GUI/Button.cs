@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Button:GuiObject
+    class Button:GuiObject,IRenderable
     {
         private Frame buttonActive;
         private Frame buttonInactive;
@@ -27,7 +27,7 @@ namespace ConsoleApp5.GUI
         {
             isActive = false;
         }
-        public override void Render()
+        public void Render()
         {
             if (isActive == true)
             {

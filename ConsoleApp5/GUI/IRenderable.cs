@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class GameWindow
+    interface IRenderable
     {
+        void Render();
     }
 }

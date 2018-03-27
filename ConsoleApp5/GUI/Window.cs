@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5.GUI
 {
-    class Window:GuiObject
+    class Window:GuiObject,IRenderable
     {
         private Frame windowBorder;
 
