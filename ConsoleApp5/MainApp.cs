@@ -15,7 +15,6 @@ namespace ConsoleApp5
             MainWindow kek = new MainWindow();
             kek.Render();
             Console.ReadKey();
-
         }
     }
 }
