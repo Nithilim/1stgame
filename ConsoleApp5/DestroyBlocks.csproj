@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bouncer.cs" />
     <Compile Include="BouncerPlatfrom.cs" />
+    <Compile Include="Repeater.cs" />
     <Compile Include="GUI\GuiObject.cs" />
     <Compile Include="GUI\Frame.cs" />
     <Compile Include="GUI\IRenderable.cs" />

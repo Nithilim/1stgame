@@ -11,7 +11,14 @@ namespace ConsoleApp5
     {
         private int xCord = 13;
         private int yCord = 30;
-        private string platform = "=====";
+        private string platform;
+        private char shootSymbol;
+
+        //public BouncerPlatfrom(string platform, char shootSymbol)
+        //{
+        //    this.platform = platform;
+        //    this.shootSymbol = shootSymbol;
+        //}
 
         public void MoveLeft()
         {
@@ -41,6 +48,15 @@ namespace ConsoleApp5
             else
             {
                 xCord-=2;
+            }
+        }
+        public void Shoot()
+        {
+            if (yCord < 29)
+            {
+                yCord++;
+                Console.SetCursorPosition(xCord - 2, yCord);
+                Console.Write('o');
             }
         }
         public void Render()
