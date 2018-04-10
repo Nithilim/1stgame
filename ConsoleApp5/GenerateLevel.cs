@@ -54,5 +54,13 @@ namespace ConsoleApp5
         {
             return blockCordY;
         }
+        public void RemoveAtCollision(int index)
+        {
+            if (blockCordX.Count > index && blockCordY.Count > index)
+            {
+                blockCordX.RemoveAt(index);
+                blockCordY.RemoveAt(index);
+            }
+        }
     }
 }

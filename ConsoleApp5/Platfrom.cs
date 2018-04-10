@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    class Platfrom:IRenderable
+    class Platfrom : IRenderable
     {
         private int xCord = 13;
         private int yCord = 30;
@@ -24,14 +24,14 @@ namespace ConsoleApp5
             if (xCord < 25 && xCord > 0)
             {
                 xCord--;
-                Console.SetCursorPosition(0,30);
+                Console.SetCursorPosition(0, 30);
                 Console.Write(stringRepeat);
                 Console.SetCursorPosition(xCord, yCord);
                 Console.Write(platform);
             }
             else
             {
-                xCord+=2;
+                xCord += 2;
             }
         }
         public void MoveRight()
@@ -46,7 +46,7 @@ namespace ConsoleApp5
             }
             else
             {
-                xCord-=2;
+                xCord -= 2;
             }
         }
         public void Render()
@@ -58,5 +58,5 @@ namespace ConsoleApp5
         {
             return xCord;
         }
-    }
+    }  
 }
