@@ -11,27 +11,15 @@ namespace ConsoleApp5
     {
         private static void Main()
         {
-            Thread first = new Thread(new ThreadStart(loopA));
-            Thread second = new Thread(new ThreadStart(loopB));
-            first.Start();
-            second.Start();
-            Console.ReadKey();
-        }
-        static void loopA()
-        {
-            for (int i = 0; i < 15; i++)
+            Random dropType = new Random();
+            
+            for(int i = 0; i < 50; i++)
             {
-                Console.WriteLine("Bandom loop A");
+                int dropChance = dropType.Next(0, 2);
+                Console.WriteLine(dropChance);
                 System.Threading.Thread.Sleep(50);
             }
-        }
-        static void loopB()
-        {
-            for (int i = 0; i < 15; i++)
-            {
-                Console.WriteLine("Bandom daugiau loop B");
-                System.Threading.Thread.Sleep(60);
-            }
+            Console.ReadKey();
         }
     }
 }

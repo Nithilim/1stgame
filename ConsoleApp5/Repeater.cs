@@ -15,8 +15,7 @@ namespace ConsoleApp5
             this.text = text;
             this.count = count;
         }
-
-        public static string Repeat(string text, int count)
+        public string Repeat()
         {
             return new StringBuilder(text.Length * count).Insert(0, text, count).ToString();
         }

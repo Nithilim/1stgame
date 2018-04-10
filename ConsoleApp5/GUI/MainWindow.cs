@@ -15,7 +15,7 @@ namespace ConsoleApp5.GUI
         private Frame mainWindowFrame = new Frame(59, 29, 0, 0, '#');
         private int buttonPosition = 0;
         //private TestGhostDodger startGame = new TestGhostDodger();
-        private Bouncer startGame = new Bouncer();
+        //private Bouncer startGame = new Bouncer();
 
         private void AddText()
         {
@@ -103,7 +103,7 @@ namespace ConsoleApp5.GUI
                 if (buttonPosition == 0 && consoleKey.Key == ConsoleKey.Enter)
                 {
                     buttonSelected = true;
-                    startGame.Render();
+                    //startGame.Render();
                 }
                 if (buttonPosition == 1 && consoleKey.Key == ConsoleKey.Enter)
                 {

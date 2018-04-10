@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bouncer.cs" />
-    <Compile Include="BouncerPlatfrom.cs" />
+    <Compile Include="LevelInfoFlow.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="States.cs" />
+    <Compile Include="Tester.cs" />
+    <Compile Include="Checker.cs" />
+    <Compile Include="GenerateLevel.cs" />
+    <Compile Include="Platfrom.cs" />
     <Compile Include="Repeater.cs" />
     <Compile Include="GUI\GuiObject.cs" />
     <Compile Include="GUI\Frame.cs" />
@@ -53,7 +58,7 @@
     <Compile Include="GUI\Window.cs" />
     <Compile Include="GUI\Button.cs" />
     <Compile Include="GUI\MainWindow.cs" />
-    <Compile Include="GUI\CreditWindow.cs" />
+    <Compile Include="GUI\HighScoreWindow.cs" />
     <Compile Include="GUI\TextBlock.cs" />
     <Compile Include="MainApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
